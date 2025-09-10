@@ -2,6 +2,14 @@
     --background-upper: #1f2937;
     --main-text: #f9faf8;
     --secondary-text: #e5e7eb;
+    --button-color: #3882f6;
+    --info-color: #1f2937;
+
+    /* Text */
+    --main-font: 900 48px "Roboto";
+    --secondary-font: 400 18px "Roboto";
+    --logo-font: 400 24px "Roboto";
+    --info-font: 900 36px "Roboto";
 
     --default-padding: 8px 300px;
 }
@@ -9,6 +17,13 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+.padding {
+    padding: var(--default-padding);
+}
+
+body {
     font-family: "Roboto", sans-serif;
 }
 
@@ -17,23 +32,70 @@ header {
     justify-content: space-between;
     background-color: var(--background-upper);
     padding: var(--default-padding);
+    padding-bottom: 24px;
 
     h1 {
         color: var(--main-text);
-        font-size: 24px;
+        font: var(--logo-font);
         text-align: center;
         margin: 12px
     }
 
     ul, a {
-        font-size: 18px;
-        border: 1px solid red;
+        color: var(--secondary-text);
+        font: var(--secondary-font);
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 12px;
         list-style: none;
         text-decoration: none;
-        color: var(--secondary-text);
     }
+}
+
+.content-upper {
+    background-color: var(--background-upper);
+    padding: var(--default-padding);
+    padding-block: 84px;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        color: var(--main-text);
+        font: var(--main-font);
+        font-weight: 900;
+    }
+
+    p {
+        color: var(--secondary-text);
+        font: var(--secondary-font);
+        margin-block: 4px;
+    }
+
+    .signbutton {
+        color: var(--main-text);
+        background-color: var(--button-color);
+        padding: 6px 24px;
+        border-radius: 8px;
+        margin-block: 8px;
+        border: none;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container {
+    width: 450px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
