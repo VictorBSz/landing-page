@@ -99,3 +99,50 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+.content-middle {
+    margin-block: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info {
+        font: var(--info-font);
+        text-align: center;
+    }
+
+    .cards {
+        margin-block: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid red;
+        width: 1000px;
+        text-align: center;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .imgph {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+                border: 5px solid var(--button-color);
+                border-radius: 8px;
+                height: 150px;
+                width: 150px;
+            }
+        
+            .subtext {
+                color: grey;
+                border: 1px solid green;
+                width: 145px;
+                font: var(--secondary-font);
+            }
+    }
+}
