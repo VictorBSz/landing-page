@@ -92,7 +92,7 @@ header {
     }
 }
 
-.container {
+.container-upper {
     width: 450px;
 }
 
@@ -155,27 +155,29 @@ header {
     justify-content: center;
     align-items: center;
 
+    .container-lower {
+        width: 1100px;
+        display: flex;
+        flex-direction: column;
+    }
+
     .quote {
         display: flex;
         flex-direction: column;
-        width: 800px;
         justify-content: center;
         align-items: center;
+        font: var(--quote-font);
+        font-style: italic;
+        color: var(--info-color)
     }
-
-        h3 {
-            font: 300 36px "Roboto";
-            color: var(--info-color);
-        }
-
-        p {
-            text-align: right;
-            font-weight: bold;
-        }
     
-        .credit {
-            display: flex;
-            margin-left: auto;
-            margin-right: 290px;
-        }
+    .credit {
+        display: flex;
+        margin-left: auto;
+        font: var(--logo-font);
+        font-weight: bold;
+    }
 }
+
+
+
