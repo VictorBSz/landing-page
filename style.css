@@ -1,5 +1,6 @@
 :root {
     --background-upper: #1f2937;
+    --background-lower: #e5e7eb;
     --main-text: #f9faf8;
     --secondary-text: #e5e7eb;
     --button-color: #3882f6;
@@ -10,6 +11,7 @@
     --secondary-font: 400 18px "Roboto";
     --logo-font: 400 24px "Roboto";
     --info-font: 900 36px "Roboto";
+    --quote-font: 300 36px "Roboto";
 
     --default-padding: 8px 300px;
 }
@@ -101,7 +103,7 @@ header {
 }
 
 .content-middle {
-    margin-block: 24px;
+    margin-block: 24px 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +118,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid red;
         width: 1000px;
         text-align: center;
 
@@ -140,9 +141,41 @@ header {
         
             .subtext {
                 color: grey;
-                border: 1px solid green;
                 width: 145px;
                 font: var(--secondary-font);
             }
     }
+}
+
+.content-lower {
+    background-color: var(--background-lower);
+    padding-block: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        justify-content: center;
+        align-items: center;
+    }
+
+        h3 {
+            font: 300 36px "Roboto";
+            color: var(--info-color);
+        }
+
+        p {
+            text-align: right;
+            font-weight: bold;
+        }
+    
+        .credit {
+            display: flex;
+            margin-left: auto;
+            margin-right: 290px;
+        }
 }
