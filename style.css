@@ -13,7 +13,7 @@
     --info-font: 900 36px "Roboto";
     --quote-font: 300 36px "Roboto";
 
-    --default-padding: 8px 300px;
+    --default-padding: 8px 35vh;
 }
 
 * {
@@ -60,7 +60,7 @@ header {
     padding: var(--default-padding);
     padding-block: 84px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     h2 {
         color: var(--main-text);
@@ -74,15 +74,7 @@ header {
         margin-block: 4px;
     }
 
-    .signbutton {
-        color: var(--main-text);
-        background-color: var(--button-color);
-        padding: 6px 24px;
-        border-radius: 8px;
-        margin-block: 8px;
-        border: none;
-    }
-
+    
     img {
         width: 300px;
         height: 200px;
@@ -90,6 +82,16 @@ header {
         justify-content: center;
         align-items: center;
     }
+}
+.signbutton {
+    color: var(--main-text);
+    background-color: var(--button-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding: 6px 24px;
+    border-radius: 8px;
+    margin-block: 8px;
+    border: none;
 }
 
 .container-upper {
@@ -176,6 +178,32 @@ header {
         margin-left: auto;
         font: var(--logo-font);
         font-weight: bold;
+    }
+}
+
+.signup {
+    margin: 100px 30vh;
+    background-color: var(--button-color);
+    border-radius: 8px;
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
+
+    .left {
+        color: white;
+    }
+
+    h3 {
+        font: var(--logo-font)
+    }
+
+    p {
+        font: var(--secondary-font)
+    }
+
+    .button-border {
+        border: 3px solid white;
     }
 }
 
